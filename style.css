@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root {
+    --font:  'Red Hat Display', sans-serif;
+    --background: #E1E9FF;
+    --white: #fff;
+    --Desaturated-blue: hsl(224, 23%, 55%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--font);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--background);
+}
+
+
+
+#box__container {
+    max-width: 450px;
+    padding: 20px;
+    
+}
+
+.ww {
+    background-color: var(--white);
+    padding:  0 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.img__principal {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.text {
+    padding: 30px 0;
+}
+
+
+.subtitle {
+  color:  hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+.paragrafo__text {
+    padding: 0 40px;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+
+.box__plan {
+    border: 1px solid hsla(223, 47%, 23%, 0.034);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+}
+
+
+.link {
+    color: #8C86B8;
+    font-weight: 700;
+}
+
+
+.flex {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    width: 88%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px ;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    
+}
+
+
+.cancel {
+    display: block;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.spc {
+    padding-bottom: 50px;
+}
+
+
+
+@media (max-width: 375px) {
+
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    #box__container {
+        max-width: 350px;
+        margin: auto;
+        padding: 20px;
+    }
+
+
+    .box__plan {
+        display: flex;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+
+}
+
+
